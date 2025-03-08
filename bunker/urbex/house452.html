@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <script>
+        // Fetch the template
+        fetch('/bunker/.template.html')
+            .then(response => response.text())
+            .then(data => {
+                // Replace the word "template" with "custom content"
+                const updatedContent = data.replace(/TEMPLATE/g, 'House 452')
+			    .replace(/backlink/g, '/bunker/urbex.html');
+
+                // Insert the updated content into the document
+                document.documentElement.innerHTML = updatedContent + document.documentElement.innerHTML;
+
+
+            // Extract and execute scripts from the template
+                //const templateElement = document.documentElement.innerHTML;
+		    //console.log(templateElement);
+                const script = document.getElementById('sidebarScript');
+                    
+		    //console.log(script);
+		    var newScript = document.createElement('script');
+                    newScript.textContent = script.textContent; // Inline script
+                    document.body.append(script);
+		    //console.log(newScript.textContent);
+		    document.body.appendChild(newScript);
+
+            })
+            .catch(error => console.error('Error fetching template:', error));
+   		 </script>
+
+
+
+
+
+
+
+		 <p> An abandoned house south of Linköping: </p> 
+		<img class"houseDist" src="/BUNKERimg/house452/houseDistance.jpg" width="630px">
+		<img class"shedDist" src="/BUNKERimg/house452/shedDistance.jpg" width="630px">
+		<img class"door" src="/BUNKERimg/house452/doorCloseup.jpg" width="630px">
+
+	 	<p> The inside: </p>
+		<img class"house" src="/BUNKERimg/house452/houseInside1.jpg" width="630px">
+		<img class"house" src="/BUNKERimg/house452/houseinside2.jpg" width="630px">
+		<img class"house" src="/BUNKERimg/house452/houseInside3.jpg" width="630px">
+
+		<p> The broken roof: </p>
+		<img class"roof" src="/BUNKERimg/house452/houseRoof1.jpg" width="630px">
+		<img class"roof" src="/BUNKERimg/house452/houseRoof2.jpg" width="630px">
+		<img class"roof" src="/BUNKERimg/house452/houseRoof3.jpg" width="630px">
+		<img class"roof" src="/BUNKERimg/house452/houseRoof4.jpg" width="630px">
+		<img class"roof" src="/BUNKERimg/house452/houseHole.jpg" width="630px">
+		
+		<p> The shed: </p>
+		<img class"shed" src="/BUNKERimg/house452/shedDoor.jpg" width="630px">
+		<img class"shed" src="/BUNKERimg/house452/shedInside.jpg" width="630px">
+
+
+    </div>
+        </div>
+    </div>
+</body>
+</html>

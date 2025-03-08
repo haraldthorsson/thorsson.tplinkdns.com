@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">	
+    <title> About </title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+	<h1>ABOUT</h1>
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+    </div>
+
+    <div class="main">
+        
+	<div id="sidebar"></div>
+	<script>
+    	    fetch("sidebar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("sidebar").innerHTML = html;
+                })
+            .catch(error => console.error("Error loading sidebar:", error));
+	</script>
+
+	<div class="content">
+	    <h1>PROGRAMMER • ARTIST • COMPOSER • PIRATE • CYBER SECURITY</h1>
+
+            <div class="me">
+                <img src="img/mrthorsson.jpg" alt="Me">
+	    </div>
+	    <h1> Website written in VIM,<br> Gifs made in Blender, <br> Pixelart made in Aseprite. </h1>
+	    <h1> Webserver is running on a laptop under my desk. </h1>
+
+            <div class="media">
+                <img src="img/server.jpg" alt="server">
+	    </div>
+
+	</div>
+    </div>
+</body>

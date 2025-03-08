@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <script>
+        // Fetch the template
+        fetch('/bunker/.template.html')
+            .then(response => response.text())
+            .then(data => {
+                // Replace the word "template" with "custom content"
+                const updatedContent = data.replace(/TEMPLATE/g, 'davidrule.net')
+			    .replace(/backlink/g, '/bunker/documentation.html');
+
+                // Insert the updated content into the document
+                document.documentElement.innerHTML = updatedContent + document.documentElement.innerHTML;
+
+
+            // Extract and execute scripts from the template
+                //const templateElement = document.documentElement.innerHTML;
+		    //console.log(templateElement);
+                const script = document.getElementById('sidebarScript');
+                    
+		    //console.log(script);
+		    var newScript = document.createElement('script');
+                    newScript.textContent = script.textContent; // Inline script
+                    document.body.append(script);
+		    //console.log(newScript.textContent);
+		    document.body.appendChild(newScript);
+
+            })
+            .catch(error => console.error('Error fetching template:', error));
+   		 </script>
+
+
+
+
+
+
+
+		 <p> Föreläsare David Rules hemsida, dess innehåll och infrastuktur. </p> 
+		<img class"bunkerImgSmall" src="https://liu.se/-/media/employeeimages/72/employee_image_davru72.jpeg?as=1&w=300&h=300&cr=1&crw=300&crh=300&bc=%23ffffff&hash=80D7B7D47021E876887EA724ED2552B6" width=200px>
+
+	 	<p> http://www.davidrule.net <br>
+		<br>
+		 
+
+		 IP Adress: 155.4.15.231<br>
+		 Hostname: h-155-4-15-231.a163.priv.bahnhof.se<br>
+		 ASN: 8473<br>
+		 ISP: Bahnhof AB<br>
+		 Latitude: 58.3246<br>
+		 Longitude: 15.1279<br>
+		 Location: Östergötland County, Mjölby<br>
+		 Address: Stationsvägen 1<br>
+	  <br>
+		 Nmap scan report for 155.4.15.231<br>
+		 PORT   STATE SERVICE VERSION<br>
+		 22/tcp open  ssh     OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)<br>
+		 80/tcp open  http    Apache httpd 2.2.22 ((Debian))<br>
+		 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel<br>
+		 <br>
+		 OpenSSH 6.0 was released on 2012-04-22. It is available from the
+		 mirrors listed at [https://www.openssh.com/](https://www.openssh.com/).
+		 OpenSSH is a 100% complete SSH protocol version 1.3, 1.5 and 2.0
+		 implementation and includes sftp client and server support. <br>
+		<br>
+
+		.htacces är öppen vilket gör att det går att komma åt alla directories t.ex /images eller /test.<br>
+
+		<br>
+
+		I både tata79 och tatb04 finns inloggnings ett formulär till det är lösenordet: eipi+1=0<br>
+
+		<br>
+		Found pages on davidrule.net<br>
+
+		directory path: http://davidrule.net/images<br>
+		directory path: http://davidrule.net/test<br>
+		directory path: http://davidrule.net/scripts<br>
+		directory path: http://davidrule.net/links<br>
+		directory path: http://davidrule.net/contact<br>
+		directory path: http://davidrule.net/research<br>
+		directory path: http://davidrule.net/fourier<br>
+		directory path: http://davidrule.net/teaching<br>
+		directory path: http://davidrule.net/geometry<br>
+		Successful path: http://davidrule.net/index.php~<br>
+		 <br>
+		directory path: http://davidrule.net/tata27<br>
+		directory path: http://davidrule.net/tata79<br>
+		directory path: http://davidrule.net/132<br>
+		directory path: http://davidrule.net/131<br>
+		directory path: http://davidrule.net/133<br>
+		directory path: http://davidrule.net/195<br>
+		directory path: http://davidrule.net/196<br>
+
+		<br>
+		Forbidden:<br>
+	       	forbidden path: http://davidrule.net/.htaccess<br>
+		forbidden path: http://davidrule.net/.htpasswd<br>
+		forbidden path: http://davidrule.net/server-status<br>
+		 
+		 
+		 </p>
+
+		
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

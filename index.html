@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to thorsson.tplinkdns.com</title>
+</head>
+<body>
+    <div class="header">
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+	<h1>Welcome To: <br>thorsson.tplinkdns.com:55744</h1>
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+    </div>
+
+    <div class="main">
+        
+	<div id="sidebar"></div>
+	<script>
+    	    fetch("sidebar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("sidebar").innerHTML = html;
+                })
+            .catch(error => console.error("Error loading sidebar:", error));
+	</script>
+
+	<div class="content">
+            <h1>HARALD THORSSON</h1>
+            <div class="media">    
+	    	<h1>I got lost in the woods and asked the shepard for the altitude, he replied ‘thorsson.tplinkdns.com’ and suddenly I realized that I was on the peak.</h1>
+                
+		<img src="img/name.gif" alt="Name">
+                <img src="img/construction.gif" alt="Under Construction">
+		<iframe frameborder="0" src="https://itch.io/embed/3295620?border_width=5&amp;bg_color=1c7e84&amp;fg_color=ffffff&amp;link_color=0cfffb&amp;border_color=bebebe" width="560" height="175"><a href="https://harald-thorsson.itch.io/robo-os">ROBO-OS by Harald Thorsson</a></iframe>
+                <img src="img/alienattack.gif" alt="Alien Attack">
+                <img id="image0" src="http://88.84.250.237:80/axis-cgi/mjpg/video.cgi?camera=&resolution=640x480" 
+                     alt="Camera Feed" title="Click here to enter the camera located in Sweden, region Orebro Lan">
+                <img src="img/xray.gif" alt="x-ray">
+		<h1> I asked the shepard for the altitude and realized that i was on the fuckin bottom </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

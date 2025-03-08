@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">	
+    <title> Gallery </title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+	<h1>GALLERY</h1>
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+    </div>
+
+    <div class="main">
+        
+	<div id="sidebar"></div>
+	<script>
+    	    fetch("sidebar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("sidebar").innerHTML = html;
+                })
+            .catch(error => console.error("Error loading sidebar:", error));
+	</script>
+
+	<div class="content">
+	    <div class="gallery"></div>	
+
+		<script>
+    		    const imageFolder = "gallery/";
+
+    		    const galleryDiv = document.querySelector(".gallery");
+
+    			fetch(imageFolder)
+        		    .then(response => response.text())
+        		    .then(html => {
+           			 const parser = new DOMParser();
+           			 const doc = parser.parseFromString(html, "text/html");
+            			 const images = Array.from(doc.querySelectorAll("a"))
+                		    .map(link => link.href)
+                		    .filter(link => /\.(jpe?g|png|gif|bmp|webp)$/i.test(link));
+
+            	    images.forEach(src => {
+			src2 = src.replace("4/", "4/gallery/")    
+			console.log(src2);
+                	const img = document.createElement("img");
+                	img.src = src2;
+                	img.alt = "Gallery Image";
+                	img.addEventListener("click", () => {
+                    	    window.open(src2, "_blank");
+                        });
+                     galleryDiv.appendChild(img);
+                     });
+       		 })
+                 .catch(err => console.error("Error loading images:", err));
+	</script>
+
+
+
+
+
+
+        </div>		
+    </div>
+</body>

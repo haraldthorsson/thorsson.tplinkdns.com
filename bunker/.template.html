@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <link rel="stylesheet" href="/styles.css">	
+    <title> TEMPLATE </title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="/img/skullsmall.gif" alt="Skull" class="logo">
+	<h1>TEMPLATE</h1>
+	
+        <img src="/img/skullsmall.gif" alt="Skull" class="logo">
+    </div>
+
+    <div class="main">
+        
+	<div id="sidebar"></div>
+	<script id="sidebarScript" >
+    	    fetch("/sidebar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("sidebar").innerHTML = html;
+                })
+            .catch(error => console.error("Error loading sidebar:", error));
+	</script>
+
+	<div class="content">
+	    <div class="bunkerContent"> 
+		
+		 <div class="backButton">
+			 <a href="backlink">BACK</a>
+		</div>
+		<h1> TEMPLATE </h1>

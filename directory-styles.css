@@ -1,0 +1,10 @@
+* { 
+    background-color: #1f2427;  
+    color: rgb(219, 109, 20); 
+    border-color: rgb(219, 109, 20); 
+    font-family: monospace; 
+}
+
+img { 
+    image-rendering: pixelated; 
+}

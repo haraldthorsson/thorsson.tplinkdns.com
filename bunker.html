@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">	
+    <title> Gallery </title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+	<h1>[ BUNKER ]</h1>
+	
+        <img src="img/skullsmall.gif" alt="Skull" class="logo">
+    </div>
+
+    <div class="main">
+        
+	<div id="sidebar"></div>
+	<script>
+    	    fetch("/sidebar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("sidebar").innerHTML = html;
+                })
+            .catch(error => console.error("Error loading sidebar:", error));
+	</script>
+
+	<div class="content">
+	    <div class="bunkerContent"> 
+	        <pre style="font-family: monospace"> 
+███     ██████  ██    ██ ███    ██ ██   ██ ███████ ██████      ███ 
+██      ██   ██ ██    ██ ████   ██ ██  ██  ██      ██   ██      ██ 
+██      ██████  ██    ██ ██ ██  ██ █████   █████   ██████       ██ 
+██      ██   ██ ██    ██ ██  ██ ██ ██  ██  ██      ██   ██      ██ 
+███     ██████   ██████  ██   ████ ██   ██ ███████ ██   ██     ███ </pre>
+
+	        <h1> Images, Documentation, Information </h1>
+	
+		<ul id="fileList"></ul>
+
+
+    <?php
+    $folder = 'bunker/'; 
+    $files = glob($folder . '*.html');
+    foreach ($files as $file) {
+      $fileName = basename($file);
+      echo "<li class=\"bunkerLi\"><a class=\"link\" href='$folder$fileName'>$fileName</a></li>";
+    }
+    ?>
+
+
+            </div>
+	</div>		
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[ ] Chat with post
+[ ] accounts with profiles
+[ ] File sharing
+

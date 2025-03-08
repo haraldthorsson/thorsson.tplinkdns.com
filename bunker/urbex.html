@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <script>
+        // Fetch the template
+        fetch('/bunker/.template.html')
+            .then(response => response.text())
+            .then(data => {
+                // Replace the word "template" with "custom content"
+                const updatedContent = data.replace(/TEMPLATE/g, 'URBEX')
+			    .replace(/backlink/g, '/bunker.html');
+                // Insert the updated content into the document
+                document.documentElement.innerHTML = updatedContent + document.documentElement.innerHTML;
+
+
+            // Extract and execute scripts from the template
+                //const templateElement = document.documentElement.innerHTML;
+		    //console.log(templateElement);
+                const script = document.getElementById('sidebarScript');
+                    
+		    //console.log(script);
+		    var newScript = document.createElement('script');
+                    newScript.textContent = script.textContent; // Inline script
+                    document.body.append(script);
+		    //console.log(newScript.textContent);
+		    document.body.appendChild(newScript);
+
+            })
+            .catch(error => console.error('Error fetching template:', error));
+   		 </script>
+
+
+
+
+
+    <?php
+    $folder = 'urbex/'; 
+    $files = glob($folder . '*.html');
+    foreach ($files as $file) {
+      $fileName = basename($file);
+      echo "<li class=\"bunkerLi\"><a class=\"link\" href='$folder$fileName'>$fileName</a></li>";
+    }
+    ?>
+
+
+		
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
