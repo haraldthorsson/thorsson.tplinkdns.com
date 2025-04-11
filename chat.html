@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat</title>
+    <style>
+        #chat-box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #message-input {
+            width: 300px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Chat</h1>
+    <div id="chat-box">
+        <?php
+        // Read and display the chat history from the text file
+        if (file_exists('chat.txt')) {
+            $chat_history = file_get_contents('chat.txt');
+            echo nl2br($chat_history); 
+        }
+        ?>
+    </div>
+    <form action="send.php" method="POST">
+        <input type="text" id="message-input" name="message" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+    </form>
+
+
+<script>
+    function refreshChat() {
+        fetch('index.php')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const chatBox = doc.getElementById('chat-box');
+                document.getElementById('chat-box').innerHTML = chatBox.innerHTML;
+            });
+    }
+
+    setInterval(refreshChat, 5000); // Refresh every 5 seconds
+</script>
+
+
+
+    <script>
+        // Function to scroll the chat box to the bottom
+        function scrollToBottom() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // Scroll to the bottom when the page loads or refreshes
+        window.onload = scrollToBottom;
+
+        // Optional: Scroll to the bottom after sending a message
+        document.querySelector('form').addEventListener('submit', function() {
+            setTimeout(scrollToBottom, 100); // Small delay to allow the new message to be added
+        });
+    </script>
+
+</body>
+</html>
